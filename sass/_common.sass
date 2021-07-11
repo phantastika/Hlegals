@@ -1,0 +1,75 @@
+.menu__item
+    &-languages
+        text-transform: uppercase
+        background: none
+        border: none
+        cursor: pointer
+        padding: 5px
+        &:hover
+            background-color: $bgc-crimson
+            transition-duration: 0.5s
+            cursor: pointer
+
+.circle
+    width: 6px
+    height: 6px
+    border-width: 0 2px 2px 0
+    background-color: $bgc-white
+    border-radius: 50px
+    display: inline-block
+    margin: 2px 4px
+
+.button__cercle
+    width: 42px
+    height: 42px
+    border: 1px solid $txt-white
+    border-radius: 50%
+    position: relative
+    cursor: pointer
+    padding: 0
+    margin: 0
+    background-color: #323264
+    &:hover
+        transform: rotate(180deg)
+        animation: duration 0.05s
+.arrow__down
+    width: 9px
+    height: 9px
+    border-width: 0 3px 3px 0
+    border-color: $txt-white
+    border-style: solid
+    display: inline-block
+    transform: rotate(45deg)
+    &:hover
+        animation-direction: reverse
+
+.cercle-wrap
+    margin-top: 324px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.flex-column
+    flex-direction: column
+    align-items: flex-end
+
+.flex-table
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+
+.slider-nav
+    background-color: $bgc-blue
+    border: none
+    border-radius: 50px
+    cursor: pointer
+    height: 16px
+    width: 16px
+    margin-left: 14px
+    text-align: center

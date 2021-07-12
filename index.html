@@ -11,14 +11,14 @@
     <div class="page page--background-main page--100vh">
       <div class="container">
         <header class="header">
-          <div class="header-wrap">
+          <div class="flex header-wrap">
             <div class="header-logo">
               <img src="./assets/img/Logo_on_Dark.svg" alt="logo header" />
             </div>
             <div>
               <div class="menu-wrap">
                 <nav>
-                  <ul class="menu">
+                  <ul class="flex menu menu--dark">
                     <li>
                       <button class="menu__item menu__item-languages">
                         укр
@@ -43,26 +43,25 @@
                       <a
                         class="menu__item menu__item-phone"
                         href="tel:+380503901591"
-                        ><span class="circle"></span>+38(050) 390 15 91<span
-                          class="circle"
-                        ></span
+                        ><span class="circle circle--white"></span>+38(050) 390
+                        15 91<span class="circle circle--white"></span
                       ></a>
                     </li>
                     <li>
                       <a
                         class="menu__item menu__item-facebook"
                         href="https://www.facebook.com/"
-                        ><span class="fb__logo-white"></span>
+                        ><span class="fb-logo fb-logo--white"></span>
                       </a>
                     </li>
                   </ul>
                 </nav>
               </div>
-              <div class="menu-wrap">
+              <div class="flex menu-wrap">
                 <nav>
-                  <ul class="menu line-bottom">
+                  <ul class="flex menu menu-button--dark">
                     <li>
-                      <a class="menu__item menu__item-pages" href="#">о нас</a>
+                      <a class="menu__item menu__item-pages" href="./pages/about.html">о нас</a>
                     </li>
                     <li>
                       <a class="menu__item menu__item-pages" href="#"
@@ -91,7 +90,6 @@
           </div>
         </header>
       </div>
-
       <div class="background_splash">
         <div class="background_logo">
           <div class="flex section-moto">
@@ -367,32 +365,42 @@
             <div class="img-article img-article--kid"></div>
           </div>
         </div>
-        <footer>
-          <div>
+        <footer class="footer footer--padding">
+          <div class="footer-container flex">
             <nav>
-              <ul>
+              <ul class="flex footer-items">
                 <li>
                   <a href="#"> Одеса, Алміральский пр.,</a>
                 </li>
                 <li>
+                  <span class="circle circle--grey"></span
                   <a href="#">Подивитися на мапі</a>
                 </li>
               </ul>
             </nav>
             <p>© 2021 ТОВ Юридична компанія «HLEGALS»</p>
           </div>
-          <div>
-            <li>
-              <a href="#"><span></span></a>
-            </li>
-            <li>
-              <a href="tel:+380503901591"
-                ><span></span>+38(050) 390 15 91<span></span
-              ></a>
-            </li>
-            <li>
-              <a email="contact@hlegals.net">contact@hlegals.net</a>
-            </li>
+          <div class="footer-container flex">
+            <nav>
+              <ul class="flex footer-items">
+                <li>
+                  <a
+                    class="menu__item menu__item-facebook"
+                    href="https://www.facebook.com/"
+                    ><span class="fb-logo fb-logo--blue"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="tel:+380503901591"
+                    ><span class="circle circle--grey"></span>+38(050) 390 15
+                    91<span class="circle circle--grey"></span
+                  ></a>
+                </li>
+                <li>
+                  <a email="contact@hlegals.net">contact@hlegals.net</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </footer>
       </div>

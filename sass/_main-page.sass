@@ -28,16 +28,18 @@
     margin: 0 auto
     &--button-slider-nav
         text-align: center
-.menu,
-.header-wrap
-    display: flex
-    align-items: center
-    flex-wrap: wrap
-    &.header-wrap
-        justify-content: space-between
 
-.line-bottom
+    &--dark
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+
+.menu-wrap
     justify-content: flex-end
+
+.menu-button
+    &--dark
+        align-items: right
 
 .menu__item-pages
     margin-right: 15px
@@ -45,12 +47,21 @@
 .menu__item
     margin-right: 15px
 
-.fb__logo-white
-    background-image: url('../assets/img/facebook_white.svg')
-    height: 24px
-    width: 24px
+.fb-logo
     display: inline-block
     background-repeat: no-repeat
+    &--white
+        background-image: url('../assets/img/facebook_white.svg')
+        height: 24px
+        width: 24px
+    &--blue
+        background-image: url('../assets/img/logo-fb-blue.svg')
+        height: 38px
+        width: 38px
+    &--grey
+        background-image: url('../assets/img/fb-logo-grey.svg')
+        height: 24px
+        width: 24px
 
 .background_splash
     background-image: url('../assets/img/Splash.svg')
@@ -204,3 +215,10 @@
     flex-wrap: wrap
 .article
     width: 30%
+
+.footer--padding
+    padding-top: 35px
+    padding-bottom: 50px
+    border-top: 2px solid
+    border-top: 2px solid #d3d3d3
+.footer-container

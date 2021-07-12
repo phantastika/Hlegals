@@ -28,14 +28,36 @@ a {
   cursor: pointer;
 }
 
+.menu__item--grey {
+  color: #B3B3BA;
+}
+
+.menu__item--blue {
+  color: #24A3FF;
+}
+
+.menu__item--blue:hover {
+  color: #F0145A;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #F0145A;
+  cursor: pointer;
+}
+
 .circle {
   width: 6px;
   height: 6px;
   border-width: 0 2px 2px 0;
-  background-color: #FFFFFF;
   border-radius: 50px;
   display: inline-block;
   margin: 2px 4px;
+}
+
+.circle--white {
+  background-color: #FFFFFF;
+}
+
+.circle--grey {
+  background-color: #B3B3BA;
 }
 
 .button__cercle {
@@ -95,6 +117,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .flex-column {
@@ -131,6 +155,20 @@ a {
   width: 16px;
   margin-left: 14px;
   text-align: center;
+}
+
+.slash {
+  background-image: url("../assets/img/Slash.svg");
+  width: 21px;
+  height: 46px;
+  background-repeat: no-repeat;
+}
+
+.logo-symbol {
+  background-image: url("../assets/img/P.svg");
+  width: 41px;
+  height: 47px;
+  background-repeat: no-repeat;
 }
 
 @font-face {
@@ -253,8 +291,7 @@ a {
   text-align: center;
 }
 
-.menu,
-.header-wrap {
+.container--dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -265,17 +302,16 @@ a {
       flex-wrap: wrap;
 }
 
-.menu.header-wrap,
-.header-wrap.header-wrap {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.line-bottom {
+.menu-wrap {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.menu-button--dark {
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
 .menu__item-pages {
@@ -286,12 +322,27 @@ a {
   margin-right: 15px;
 }
 
-.fb__logo-white {
+.fb-logo {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.fb-logo--white {
   background-image: url("../assets/img/facebook_white.svg");
   height: 24px;
   width: 24px;
-  display: inline-block;
-  background-repeat: no-repeat;
+}
+
+.fb-logo--blue {
+  background-image: url("../assets/img/logo-fb-blue.svg");
+  height: 38px;
+  width: 38px;
+}
+
+.fb-logo--grey {
+  background-image: url("../assets/img/fb-logo-grey.svg");
+  height: 24px;
+  width: 24px;
 }
 
 .background_splash {
@@ -538,4 +589,11 @@ a {
 
 .article {
   width: 30%;
+}
+
+.footer--padding {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  border-top: 2px solid;
+  border-top: 2px solid #d3d3d3;
 }

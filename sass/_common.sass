@@ -1,3 +1,4 @@
+
 .menu__item
     &-languages
         text-transform: uppercase
@@ -9,16 +10,28 @@
             background-color: $bgc-crimson
             transition-duration: 0.5s
             cursor: pointer
+.menu__item
+    &--grey
+        color: $txt-grey
+    &--blue
+        color: $txt-blue
+        &:hover
+            color: $txt-crimson
+            padding-bottom: 2px
+            border-bottom: 1px solid $bgc-crimson
+            cursor: pointer
 
 .circle
     width: 6px
     height: 6px
     border-width: 0 2px 2px 0
-    background-color: $bgc-white
     border-radius: 50px
     display: inline-block
     margin: 2px 4px
-
+    &--white
+        background-color: $bgc-white
+    &--grey
+        background-color: $bgc-grey
 .button__cercle
     width: 42px
     height: 42px
@@ -53,6 +66,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
 
 .flex-column
     flex-direction: column
@@ -73,3 +87,14 @@
     width: 16px
     margin-left: 14px
     text-align: center
+.slash
+    background-image: url('../assets/img/Slash.svg')
+    width: 21px
+    height: 46px
+    background-repeat: no-repeat
+
+.logo-symbol
+    background-image: url('../assets/img/P.svg')
+    width: 41px
+    height: 47px
+    background-repeat: no-repeat

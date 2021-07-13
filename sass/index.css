@@ -171,6 +171,48 @@ a {
   background-repeat: no-repeat;
 }
 
+.person-link {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.person-link,
+.person-link-wrap {
+  position: relative;
+}
+
+.arrow {
+  width: 7px;
+  height: 7px;
+  border-width: 0 2px 2px 0;
+  border-color: #24A3FF;
+  border-style: solid;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow--right {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 10px;
+  bottom: 15px;
+}
+
+.flex-min {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @font-face {
   font-family: 'TT Norms Light';
   src: url("../assets/fonts/TTNorms-Light.eot");
@@ -596,13 +638,6 @@ a {
   width: 30%;
 }
 
-.footer--padding {
-  padding-top: 35px;
-  padding-bottom: 50px;
-  border-top: 2px solid;
-  border-top: 2px solid #d3d3d3;
-}
-
 .achivement {
   width: 300px;
   height: 109px;
@@ -622,4 +657,37 @@ a {
 
 .achivement--ulf {
   background-image: url("../assets/img/achivements4.svg");
+}
+
+.foto-team-player {
+  width: 413px;
+  height: 500px;
+}
+
+.foto-team-player--alex {
+  background-image: url("../assets/img/teamplayer1.svg");
+}
+
+.foto-team-player--oksana {
+  background-image: url("../assets/img/teamplayer2.svg");
+}
+
+.foto-team-player--vladislav {
+  background-image: url("../assets/img/teamplayer3.svg");
+}
+
+.foto-team-player--vladislav2 {
+  background-image: url("../assets/img/teamplayer4.svg");
+}
+
+.foto-team-player--oksana2 {
+  background-image: url("../assets/img/teamplayer5.svg");
+}
+
+.foto-team-player--julia {
+  background-image: url("../assets/img/teamplayer6.svg");
+}
+
+.section-alex {
+  width: 45%;
 }

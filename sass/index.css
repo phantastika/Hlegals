@@ -269,7 +269,12 @@ a {
   background-image: url("../assets/img/background4_main_grey.svg");
 }
 
-.container--background-team {
+.page--about-team {
+  background-image: url("../assets/img/team_slider.png");
+  min-height: 438px;
+}
+
+.page--background-team {
   background-image: url("../assets/img/background3_main_grey.svg");
   width: 100%;
   background-repeat: no-repeat;
@@ -596,4 +601,25 @@ a {
   padding-bottom: 50px;
   border-top: 2px solid;
   border-top: 2px solid #d3d3d3;
+}
+
+.achivement {
+  width: 300px;
+  height: 109px;
+}
+
+.achivement--legal {
+  background-image: url("../assets/img/achivements1.svg");
+}
+
+.achivement--red {
+  background-image: url("../assets/img/achivements2.svg");
+}
+
+.achivement--leaders {
+  background-image: url("../assets/img/achivements3.svg");
+}
+
+.achivement--ulf {
+  background-image: url("../assets/img/achivements4.svg");
 }

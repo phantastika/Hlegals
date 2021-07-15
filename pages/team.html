@@ -12,9 +12,9 @@
       <header class="header">
         <div class="flex header-wrap">
           <div class="header-logo header-logo--white flex">
-            <img src="../assets/img/Logo_Min.png" alt="logo header" />
+            <img src="../assets/img/Logo_Min.svg" alt="logo header" />
             <span class="slash"></span>
-            <a href="#">о нас</a>
+            <a class="dark-lg" href="#">команда</a>
             <span class="logo-symbol"></span>
           </div>
           <div>
@@ -22,17 +22,35 @@
               <nav>
                 <ul class="flex menu menu--dark">
                   <li>
-                    <button class="menu__item--grey menu__item-languages">
-                      укр
+                    <button
+                      class="
+                        menu__item--grey
+                        menu__item-languages
+                        menu-item-language-white
+                      "
+                    >
+                      ук
                     </button>
                   </li>
                   <li>
-                    <button class="menu__item--grey menu__item-languages">
+                    <button
+                      class="
+                        menu__item--grey menu__item-languages
+                        item-languages
+                        menu-item-language-white
+                      "
+                    >
                       ру
                     </button>
                   </li>
                   <li>
-                    <button class="menu__item--grey menu__item-languages">
+                    <button
+                      class="
+                        menu__item--grey menu__item-languages
+                        item-languages
+                        menu-item-language-white
+                      "
+                    >
                       en
                     </button>
                   </li>
@@ -60,12 +78,10 @@
               </nav>
             </div>
             <div class="flex menu-wrap">
-              <nav>
+              <nav class="row-two-menu">
                 <ul class="flex menu menu-button--dark">
                   <li>
-                    <a
-                      class="menu__item--blue menu__item-pages"
-                      href="about.html"
+                    <a class="menu__item--blue menu__item-pages" href="#"
                       >о нас</a
                     >
                   </li>
@@ -75,7 +91,9 @@
                     >
                   </li>
                   <li>
-                    <a class="menu__item--blue menu__item-pages" href="#"
+                    <a
+                      class="menu__item--blue menu__item-pages"
+                      href="./team.html"
                       >команда</a
                     >
                   </li>
@@ -95,77 +113,102 @@
           </div>
         </div>
       </header>
-      <h3>
+      <h3 class="liner-gradient header-team-position">
         Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
         вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
       </h3>
-      <div>
-        <div class="flex team-players">
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--alex"></div>
-            <div class="name-team-player">Олександр Олександровський</div>
-            <div class="position-wrap">
-              <div class="position-team-player">Керуючий партнер</div>
-              <div class="person-link-wrap">
-                <a href="./alex.html" class="person-link"></a>
-                <span class="arrow arrow--right"></span>
+      <div class="flex team-players">
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--alex"></div>
+          <div class="position-wrap flex">
+            <div>
+              <div class="name-team-player dark-medium">
+                Олександр Олександровський
               </div>
+              <div class="position-team-player grey-xs">Керуючий партнер</div>
+            </div>
+            <div class="person-link-wrap">
+              <a href="./alex.html" class="person-link"></a>
+              <span class="arrow arrow--right"></span>
             </div>
           </div>
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--oksana"></div>
-            <div class="name-team-player">Оксана Кобзар</div>
-            <div class="position-wrap">
-              <div class="position-team-player">
+        </div>
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--oksana"></div>
+          <div class="position-wrap flex">
+            <div>
+              <div class="name-team-player dark-medium">Оксана Кобзар</div>
+              <div class="position-team-player grey-xs">
                 Equity partner, Attorney-at-law
               </div>
+            </div>
+            <div>
               <div class="person-link-wrap">
                 <a href="#" class="person-link"></a>
                 <span class="arrow arrow--right"></span>
               </div>
             </div>
           </div>
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--vladislav"></div>
-            <div class="name-team-player">Владислав Мельник</div>
-            <div class="position-wrap">
-              <div class="position-team-player">Associate</div>
+        </div>
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--vladislav"></div>
+          <div class="position-wrap flex">
+            <div>
+              <div class="name-team-player dark-medium">Владислав Мельник</div>
+              <div class="position-team-player grey-xs">Associate</div>
+            </div>
+            <div>
               <div class="person-link-wrap">
                 <a href="#" class="person-link"></a>
                 <span class="arrow arrow--right"></span>
               </div>
             </div>
           </div>
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--vladislav2"></div>
-            <div class="name-team-player">Владислав Мельник</div>
-            <div class="position-wrap">
-              <div class="position-team-player">Associate</div>
-              <div class="person-link-wrap">
-                <a href="#" class="person-link"></a>
-                <span class="arrow arrow--right"></span>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--oksana2"></div>
-            <div class="name-team-player">Оксана Кобзар</div>
-            <div class="position-wrap">
-              <div class="position-team-player">
-                Equity partner, Attorney-at-law
-              </div>
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--vladislav2"></div>
+          <div class="position-wrap flex position-wrap-row-two">
+            <div class="player-position">
+              <div class="name-team-player dark-medium">Владислав Мельник</div>
+              <div class="position-team-player grey-xs">Associate</div>
+            </div>
+            <div>
               <div class="person-link-wrap">
                 <a href="#" class="person-link"></a>
                 <span class="arrow arrow--right"></span>
               </div>
             </div>
           </div>
-          <div class="team-player">
-            <div class="foto-team-player foto-team-player--julia"></div>
-            <div class="name-team-player">Юлія Гудименко</div>
-            <div class="position-wrap">
-              <div class="position-team-player">Associate, Attorney-at-law</div>
+        </div>
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--oksana2"></div>
+          <div class="position-wrap flex position-wrap-row-two">
+            <div>
+              <div class="name-team-player dark-medium">Оксана Кобзар</div>
+              <div class="position-team-player grey-xs">
+                Equity partner, Attorney-at-law
+              </div>
+            </div>
+            <div>
+              <div class="person-link-wrap">
+                <a href="#" class="person-link"></a>
+                <span class="arrow arrow--right"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-player">
+          <div class="foto-team-player foto-team-player--julia"></div>
+          <div class="position-wrap flex position-wrap-row-two">
+            <div>
+              <div class="name-team-player dark-medium">Юлія Гудименко</div>
+              <div class="position-team-player grey-xs">
+                Associate, Attorney-at-law
+              </div>
+            </div>
+            <div>
               <div class="person-link-wrap">
                 <a href="#" class="person-link"></a>
                 <span class="arrow arrow--right"></span>
@@ -174,49 +217,52 @@
           </div>
         </div>
       </div>
- 
-    
     </div>
-    <div class="page--articles-main">
+    <div class="footer-bgs footer-position">
       <footer class="footer container">
         <div class="footer-container flex">
           <nav>
             <ul class="flex footer-items">
               <li>
-                <a href="#"> Одеса, Алміральский пр.,</a>
+                <a class="dark-small address-position" href="#">
+                  Одеса, Алміральский пр.,</a
+                >
               </li>
               <li>
-                <span class="circle circle--grey"></span
-                <a href="#">Подивитися на мапі</a>
+                <span class="circle circle--grey circle-footer"></span>
+                <a class="uppercase blue-tiny" href="#">Подивитися на мапі</a>
               </li>
             </ul>
           </nav>
-          <p>© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+          <p class="grey-xs">© 2021 ТОВ Юридична компанія «HLEGALS»</p>
         </div>
         <div class="footer-container flex">
           <nav>
-            <ul class="flex footer-items">
+            <ul class="flex footer-items footer-row-two">
               <li>
                 <a
-                  class="menu__item menu__item-facebook"
+                  class="
+                    menu__item menu__item-facebook menu__item--footer-facebook
+                  "
                   href="https://www.facebook.com/"
                   ><span class="fb-logo fb-logo--blue"></span
                 ></a>
               </li>
               <li>
-                <a href="tel:+380503901591"
-                  ><span class="circle circle--grey"></span>+38(050) 390 15
-                  91<span class="circle circle--grey"></span
+                <a class="dark-small" href="tel:+380503901591"
+                  ><span class="circle circle--grey circle-footer"></span
+                  >+38(050) 390 15 91<span
+                    class="circle circle--grey circle-footer"
+                  ></span
                 ></a>
               </li>
               <li>
-                <a email="contact@hlegals.net">contact@hlegals.net</a>
+                <a class="blue-small" email="contact@hlegals.net">legals.net</a>
               </li>
             </ul>
           </nav>
         </div>
       </footer>
     </div>
-    
   </body>
 </html>

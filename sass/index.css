@@ -164,7 +164,7 @@ a {
   width: 32px;
   height: 32px;
   border: none;
-  background-color: #B3B3BA;
+  background-color: #F5F5FA;
   border-radius: 50%;
   padding: 0;
   margin: 0;
@@ -222,6 +222,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.slider-nav--about:hover {
+  color: #24A3FF;
+  opacity: 20%;
 }
 
 @font-face {
@@ -355,6 +360,7 @@ a {
 .black-medium {
   font-size: 21px;
   color: #000000;
+  line-height: 30px;
 }
 
 .liner-gradient {
@@ -378,6 +384,10 @@ a {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.text-space-betwen {
+  margin-top: 21px;
 }
 
 .page {
@@ -889,7 +899,7 @@ a {
 }
 
 .content-about--text {
-  width: 49%;
+  width: 60%;
 }
 
 .content-about--symbol {
@@ -940,18 +950,6 @@ a {
   margin-bottom: 100px;
 }
 
-.title-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .achivement-wrap {
   padding: 20px;
 }
@@ -974,7 +972,37 @@ a {
   margin: 14px;
 }
 
-.slider-nav--about:hover {
-  color: #24A3FF;
-  opacity: 20%;
+.title-team-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 438px;
+}
+
+.liner-gradient-position {
+  margin-bottom: 20px;
+}
+
+.header-team-position {
+  width: 62%;
+  margin: 80px auto;
+}
+
+.position-wrap {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.position-wrap-row-two {
+  margin-bottom: 60px;
 }

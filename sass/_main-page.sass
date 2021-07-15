@@ -9,17 +9,17 @@
         background-image: url('../assets/img/background_main.svg')
     &--background-cervices
         background-image: url('../assets/img/background2_main.svg')
+        border-radius: 0px 0px 12px 12px
+
     &--articles-main
         background-image: url('../assets/img/background4_main_grey.svg')
     &--about-team
         background-image: url('../assets/img/team_slider.png')
         min-height: 438px
+.page
     &--background-team
         background-image: url('../assets/img/background3_main_grey.svg')
-        width: 100%
-        background-repeat: no-repeat
-        background-size: cover
-
+        border-radius: 10px
 .header-wrap
     padding-top: 50px
 
@@ -89,43 +89,55 @@
 
 .description_benefits
     width: 45%
-
+    margin-left: 40px
+.title-benefits
+    margin-bottom: 20px
 .item-benefit
     padding-right: 40px
     border-right: 4px solid $bgc-grey
     cursor: pointer
     text-align: right
     &:hover
-        color: #F0145A
-        border-right: 4px solid #F0145A
-
+        background-image: linear-gradient(350deg, #F0145A 50%, #EF8080 70%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        font-size: 42px
+.flex-breadcrumbs
+    margin-top: 80px
+.container-main-team
+    margin-top: 60px
 .breadcrumbs
     text-transform: uppercase
     color: $txt-white
     font-size: 14px
     &.breadcrumbs-blue
         color: $txt-blue
-    .arrow
+    .arrow-small
         width: 5px
         height: 5px
         border-width: 0px 2px 2px 0px
-
         border-style: solid
         display: inline-block
-        transform: rotate(-46deg)
-        margin: 1px
+        margin: 2px
+        transform: rotate(316deg)
         &--white
             border-color: $bgc-white
+
         &--blue
             border-color: $bgc-blue
-
+.title-position
+    &--gradient
+        margin-bottom: 80px
 .item-service
-    width: 31%
-
+    width: 30%
+.services-position
+    margin-top: 58px
+    margin-bottom: 80px
 .item-icon
     background-repeat: no-repeat
     height: 92px
     width: 92px
+    margin-bottom: 20px
     &--bag
         background-image: url('../assets/img/icon-bag.svg')
     &--Icon-briefbag
@@ -139,6 +151,14 @@
     &--icon-court
         background-image: url('../assets/img/Icon-court.svg')
 
+.shadow1
+    width: 90%
+    height: 10px
+    color: #CACADB
+.shadow:before
+
+.shadow:after
+
 .photo_team
     background-repeat: no-repeat
     height: 500px
@@ -147,6 +167,14 @@
 
 .section_team
     max-width: 827px
+    margin-top: 40px
+
+.wrap-position-alex
+    margin-top: 20px
+
+.button-position
+    margin-bottom: 40px
+    margin-top: 20px
 .cases
     display: flex
     flex-wrap: wrap
@@ -154,7 +182,7 @@
         border: 1px solid White
         padding: 40px
 .first_case
-    width: 29%
+
     border: 1px solid White
     .succesful_cases
         border: 1px solid White
@@ -162,10 +190,19 @@
     .case-content
         padding: 20px
 
-.case--row-one
-    width: 29%
-.case--row-two
-    width: 27%
+.cases-row--two,
+.cases-row--one,
+    display: flex
+    flex-wrap: wrap
+
+    &--small
+        width: 32%
+    &--medium
+        width: 34%
+    &--xs
+        width: 24%
+    &--big
+        width: 41%
 
 .logo-clients
     background-repeat: no-repeat
@@ -212,7 +249,21 @@
         background-image: url('../assets/img/article4.png')
     &--kid
         background-image: url('../assets/img/article5.png')
+.article-button
+    position: relative
 
+.button-article
+    position: absolute
+    bottom: 14px
+    right: 77px
+    background-color: $bgc-blue
+    border: none
+    border-radius: 6px 6px
+    width: 250px
+    height: 50px
+    color: $bgc-white
+    font-size: 14px
+    cursor: pointer
 .articles
     flex-wrap: wrap
 .article
@@ -246,5 +297,33 @@
     &--julia
         background-image: url('../assets/img/teamplayer6.svg')
 
-.section-alex
-    width: 45%
+.footer-bgs
+    background-color: $bgc-light-grey
+.footer-position
+    padding-top: 35px
+    padding-bottom: 50px
+
+.menu__item
+    &--footer-facebook
+        margin-right: 10px
+.address-position
+    margin-right: 31px
+.circle-footer
+    margin: 2px 6px
+.footer-row-two
+    margin-top: 20px
+.menu-item-language-white
+    padding: 3px
+    margin-right: 15px
+
+.content-about
+    &--text
+        width: 49%
+.icon-about
+    width: 100%
+    &--flag
+        background-image: url('../assets/img/icon_flag.svg')
+    &--icon-bag
+        background-image: url('../assets/img/icon-bag.svg')
+    &--icon-star
+        background-image: url('../assets/img/icon_star.svg')

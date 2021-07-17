@@ -422,7 +422,8 @@ a {
 .page--bgc-splash {
   background-image: url("../assets/img/Splash.svg");
   height: 75%;
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   margin: 5% auto 0;
   background-size: auto;
   display: -webkit-box;
@@ -471,6 +472,68 @@ a {
 
 .header-wrap {
   padding-top: 50px;
+}
+
+.header-logo--mobile {
+  display: none;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 30px;
+}
+
+.burger-menu--toggle {
+  z-index: 3;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  opacity: 0;
+  outline: 1px solid black;
+  pointer-events: all;
+}
+
+.burger-menu--burger {
+  z-index: 2;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.burger-menu--burger span {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  margin-top: 6px;
+  background: white;
+  border-radius: 2px;
+}
+
+.burger-menu--burger span::after, .burger-menu--burger span::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: absolute;
+  background: white;
+  border-radius: 2px;
+}
+
+.burger-menu--burger span::after {
+  margin-top: 5px;
+}
+
+.burger-menu--burger span::before {
+  margin-top: -5px;
 }
 
 .container {
@@ -541,8 +604,10 @@ a {
 .background_logo {
   background-image: url("../assets/img/symbol-Long-leg.svg");
   background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
+  height: 58vh;
+  width: 58vh;
+  max-height: 500px;
+  max-width: 500px;
   background-size: cover;
   margin: 0 auto;
   display: -webkit-box;
@@ -808,7 +873,6 @@ a {
   font-size: 14px;
   cursor: pointer;
   display: block;
-  margin-bottom: 40px;
 }
 
 .articles-wrap {
@@ -818,6 +882,9 @@ a {
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .articles-wrap .expander {
@@ -829,9 +896,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -841,12 +908,13 @@ a {
 
 .articles-wrap .col {
   width: 32%;
+  min-width: 350px;
 }
 
 .articles-wrap .col .article {
   width: 100%;
   background-color: #FFFFFF;
-  margin: 20px;
+  margin-bottom: 20px;
   min-width: 250px;
   border-radius: 8px;
 }
@@ -1189,5 +1257,39 @@ a {
   }
   .grid-wrapper .grid-item {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .container {
+    margin: 0;
+    width: 96%;
+  }
+  .header-wrap .menu-actions {
+    visibility: hidden;
+  }
+  .header-wrap .menu-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-logo--mobile {
+    display: block;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .burger-menu:hover .header-wrap .menu-actions {
+    visibility: visible;
+  }
+  .page--bgc-splash {
+    background-image: none;
+    height: 64%;
   }
 }

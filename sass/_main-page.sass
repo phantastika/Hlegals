@@ -10,7 +10,8 @@
     &--bgc-splash
         background-image: url('../assets/img/Splash.svg')
         height: 75%
-        width: 700px
+        width: 100%
+        max-width: 700px
         margin: 5% auto 0
         background-size: auto
         display: flex
@@ -34,6 +35,54 @@
         border-radius: 12px
 .header-wrap
     padding-top: 50px
+.header-logo
+    &--mobile
+        display: none
+.burger-menu
+    display: none
+    position: relative
+    width: 30px
+    &--toggle
+        z-index: 3
+        position: absolute
+        width: 20px
+        height: 20px
+        top: 0
+        left: 0
+        cursor: pointer
+        opacity: 0
+        outline: 1px solid black
+        pointer-events: all
+    &--burger
+        z-index: 2
+        position: absolute
+        width: 20px
+        height: 20px
+        top: 0
+        left: 0
+        padding: 5px
+        span
+            content: ''
+            display: block
+            width: 18px
+            height: 2px
+            position: absolute
+            margin-top: 6px
+            background: rgba(255, 255, 255, 1)
+            border-radius: 2px
+            &::after,
+            &::before
+                content: ''
+                display: block
+                width: 18px
+                height: 2px
+                position: absolute
+                background: rgba(255, 255, 255, 1)
+                border-radius: 2px
+            &::after
+                margin-top: 5px
+            &::before
+                margin-top: -5px
 
 .container
     max-width: 1320px
@@ -80,8 +129,10 @@
 .background_logo
     background-image: url('../assets/img/symbol-Long-leg.svg')
     background-repeat: no-repeat
-    height: 500px
-    width: 500px
+    height: 58vh
+    width: 58vh
+    max-height: 500px
+    max-width: 500px
     background-size: cover
     margin: 0 auto
     display: flex
@@ -242,11 +293,11 @@
     font-size: 14px
     cursor: pointer
     display: block
-    margin-bottom: 40px
 .articles-wrap
     display: flex
     position: relative
     flex-wrap: wrap
+    justify-content: space-between
     .expander
         width: 102%
         height: 30%
@@ -254,15 +305,16 @@
         position: absolute
         bottom: 0
         display: flex
-        align-items: flex-end
+        align-items: center
         justify-content: center
         background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%)
     .col
         width: 32%
+        min-width: 350px
         .article
             width: 100%
             background-color: $bgc-white
-            margin: 20px
+            margin-bottom: 20px
             min-width: 250px
             border-radius: 8px
             &--image

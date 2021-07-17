@@ -4,3 +4,31 @@
         flex-direction: column
         .grid-item
             width: 100%
+
+@media screen and ( max-width: 376px)
+    .hide-on-mobile
+        display: none
+    .container
+        margin: 0
+        width: 96%
+    .header-wrap
+        .languages
+        .menu-actions
+            visibility: hidden
+        .menu-wrap
+            justify-content: space-between
+    .header-logo
+        display: none
+        &--mobile
+            display: block
+    .burger-menu
+        display: block
+        &:hover
+            .header-wrap
+                .menu-actions
+                    visibility: visible
+
+    .page
+        &--bgc-splash
+            background-image: none
+            height: 64%

@@ -19,7 +19,6 @@
         flex-direction: column
     &--background-cervices
         background-image: url('../assets/img/background2_main.svg')
-        border-radius: 0px 0px 12px 12px
     &--articles-main
         background-image: url('../assets/img/background4_main_grey.svg')
     &--about-team
@@ -87,7 +86,6 @@
 .container
     max-width: 1320px
     padding: 0 15px
-    width: 100%
     margin: 0 auto
     &--button-slider-nav
         text-align: center
@@ -109,6 +107,7 @@
 
 .menu__item
     margin-right: 15px
+    padding-bottom: 5px
 
 .fb-logo
     display: inline-block
@@ -174,7 +173,7 @@
         font-size: 42px
 
 .flex-breadcrumbs
-    margin-top: 80px
+    // padding-top: 80px
 .container-main-team
     margin-top: 60px
 .breadcrumbs
@@ -183,6 +182,7 @@
     font-size: 14px
     &.breadcrumbs-blue
         color: $txt-blue
+        padding-top: 40px
     .arrow-small
         width: 5px
         height: 5px
@@ -199,8 +199,17 @@
 .title-position
     &--gradient
         margin-bottom: 80px
+.services-bgr
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
+    border-radius: 0px 0px 12px 12px
+    padding: 80px 0
+.services-row
+    margin: 0 -15px
 .item-service
-    width: 30%
+    width: 29%
+    margin: 20px
+    .title-service
+        padding-bottom: 15px
 .services-position
     margin-top: 58px
     margin-bottom: 80px
@@ -222,13 +231,6 @@
     &--icon-court
         background-image: url('../assets/img/Icon-court.svg')
 
-.shadow
-    background-repeat: no-repeat
-    height: 10px
-    &--frame-one
-        background-image: url('../assets/img/Bg-shadow-1.svg')
-    &--frame-two
-        background-image: url('../assets/img/Bg-shadow-2.svg')
 .photo_team
     background-repeat: no-repeat
     height: 500px
@@ -245,7 +247,9 @@
 .button-position
     margin-bottom: 40px
     margin-top: 20px
-
+.title-clients-logo
+    margin: 30px auto
+    text-align: center
 .logo-clients
     background-repeat: no-repeat
     width: 25%

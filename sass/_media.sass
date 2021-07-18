@@ -4,6 +4,9 @@
         flex-direction: column
         .grid-item
             width: 100%
+    .services-row
+        .item-service
+            width: 40%
 
 @media screen and ( max-width: 376px)
     .hide-on-mobile
@@ -32,3 +35,20 @@
         &--bgc-splash
             background-image: none
             height: 64%
+            .background_logo
+                width: 90%
+        &--background-cervices
+    .flex-min-center
+        display: none
+
+    .services-row
+        flex-direction: column
+        .item-service
+            width: 95%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+        .title-service
+            width: 70%
+            font-size: 18px

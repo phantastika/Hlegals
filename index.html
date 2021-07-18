@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./sass/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <title>Hlegal</title>
   </head>
   <body>
@@ -58,8 +69,12 @@
                       <a
                         class="menu__item menu__item-phone white-xxs"
                         href="tel:+380503901591"
-                        ><span class="circle circle--white"></span>+38(050) 390
-                        15 91<span class="circle circle--white"></span
+                      >
+                        <span
+                          class="circle circle--white hide-on-mobile"
+                        ></span>
+                        +38(050) 390 15 91
+                        <span class="circle circle--white hide-on-mobile"></span
                       ></a>
                     </li>
                     <li>
@@ -138,7 +153,105 @@
     </div>
     <div class="page page--background-cervices">
       <div class="container">
-        <div class="flex-min-center flex__benefits">
+        <div
+          id="carouselServicesIndicators"
+          class="carousel slide services--mobile"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselServicesIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselServicesIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselServicesIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselServicesIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="benefits">
+                <h4 class="liner-gradient crimson uppercase">Послідовні</h4>
+                <div class="benefits--title">
+                  Перевертаємо уявлення про юридичні послуги
+                </div>
+                <div class="benefits--content">
+                  <p class="white-xs">
+                    Консолідуючи багаторічний досвід і практику, юристи компанії
+                    супроводжують складні проекти і досягають прийняття ряду
+                    важливих для галузі рішень. Багато з них формують практику
+                    застосування морського права в Україні.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="benefits">
+                <h4 class="liner-gradient crimson uppercase">
+                  Клієнтоорієнтовані
+                </h4>
+                <div class="benefits--title">Lorem ipsum dolor sit, amet</div>
+                <div class="benefits--content">
+                  <p class="white-xs">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio cum quod facere dolores illum quaerat. Ut rem et
+                    voluptatibus voluptas pariatur. Assumenda at quos maxime!
+                    Molestiae soluta quisquam autem repellendus!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="benefits">
+                <h4 class="liner-gradient crimson uppercase">Інноваційні</h4>
+                <div class="benefits--title">Lorem ipsum dolor sit, amet</div>
+                <div class="benefits--content">
+                  <p class="white-xs">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio cum quod facere dolores illum quaerat. Ut rem et
+                    voluptatibus voluptas pariatur. Assumenda at quos maxime!
+                    Molestiae soluta quisquam autem repellendus!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="benefits">
+                <h4 class="liner-gradient crimson uppercase">
+                  Бізнес-орієнтовані юристи
+                </h4>
+                <div class="benefits--title">Lorem ipsum dolor sit, amet</div>
+                <div class="benefits--content">
+                  <p class="white-xs">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio cum quod facere dolores illum quaerat. Ut rem et
+                    voluptatibus voluptas pariatur. Assumenda at quos maxime!
+                    Molestiae soluta quisquam autem repellendus!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-min-center flex__benefits services--desktop">
           <div class="nav__benegits">
             <ul class="flex-column items-benefits">
               <li class="item-benefit grey-lg">Послідовні</li>
@@ -248,35 +361,149 @@
       <div class="shadow--frame-one"></div>
       <div class="shadow--frame-two"></div>
     </div>
-
-    <div class="container container-main-team">
-      <div class="flex-min-betwen page page--background-team">
-        <div class="foto-team-player foto-team-player--alex"></div>
-        <div class="section_team">
-          <div class="breadcrumbs breadcrumbs-blue breadcrumbs--blue uppercase">
-            команда
-            <span class="arrow-small arrow-small--blue"> </span>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="team-slider-wrapper">
+              <div
+                class="team-slider flex-min-betwen page page--background-team"
+              >
+                <div class="team-slider--photo-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/teamplayer1.svg"
+                    alt="Alex"
+                  />
+                </div>
+                <div class="section_team">
+                  <div class="breadcrumbs breadcrumbs-blue breadcrumbs--blue">
+                    команда
+                    <span class="arrow-small arrow-small--blue"> </span>
+                  </div>
+                  <div class="liner-gradient">
+                    Ми звикли брати на себе відповідальність та завжди
+                    гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли
+                    більшість безсилі.
+                  </div>
+                  <div class="wrap-position-alex">
+                    <div class="grey-xs">Олександр Олександровський</div>
+                    <div class="grey-small">Керуючий партнер</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="liner-gradient">
-            Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
-            вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.
+          <div class="carousel-item">
+            <div class="team-slider-wrapper">
+              <div
+                class="team-slider flex-min-betwen page page--background-team"
+              >
+                <div class="team-slider--photo-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/teamplayer2.svg"
+                    alt="Alex"
+                  />
+                </div>
+                <div class="section_team">
+                  <div class="breadcrumbs breadcrumbs-blue breadcrumbs--blue">
+                    команда
+                    <span class="arrow-small arrow-small--blue"> </span>
+                  </div>
+                  <div class="liner-gradient">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum voluptas alias cum at praesentium, iusto in architecto
+                    itaque dolores vitae quibusdam explicabo
+                  </div>
+                  <div class="wrap-position-alex">
+                    <div class="grey-xs">Олександр Олександровський</div>
+                    <div class="grey-small">Керуючий партнер</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="wrap-position-alex">
-            <div class="grey-xs">Олександр Олександровський</div>
-            <div class="grey-small">Керуючий партнер</div>
+          <div class="carousel-item">
+            <div class="team-slider-wrapper">
+              <div
+                class="team-slider flex-min-betwen page page--background-team"
+              >
+                <div class="team-slider--photo-wrapper">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/teamplayer3.svg"
+                    alt="Alex"
+                  />
+                </div>
+                <div class="section_team">
+                  <div class="breadcrumbs breadcrumbs-blue breadcrumbs--blue">
+                    команда
+                    <span class="arrow-small arrow-small--blue"> </span>
+                  </div>
+                  <div class="liner-gradient">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum voluptas alias cum at praesentium, iusto in architecto
+                    itaque dolores vitae quibusdam explicabo
+                  </div>
+                  <div class="wrap-position-alex">
+                    <div class="grey-xs">Mаксим Кац</div>
+                    <div class="grey-small">Головний партнер</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
     </div>
-    <div class="container container--button-slider-nav">
-      <div class="button-slider button-position">
-        <button class="slider-nav"></button>
-        <button class="slider-nav"></button>
-        <button class="slider-nav"></button>
-      </div>
-    </div>
-    <div class="page">
-      <!-- <div class="container container--background-team page--background-team"> -->
+
+    <div class="page container">
       <div class="grid-wrapper">
         <div class="grid-item grid-item--1">
           <span class="grid-item--title">Успшшні кейси</span>
@@ -321,40 +548,117 @@
     </div>
 
     <div class="page">
-      <p class="dark-xs uppercase title-clients-logo">Вже довіряють нам</p>
+      <p class="dark-xs uppercase-top title-clients-logo">Вже довіряють нам</p>
       <div class="logo-clients-wrap">
-        <div class="logo-clients logo-clients--logo-hillel"></div>
-        <div class="logo-clients logo-clients--logo-wanna-biz"></div>
-        <div class="logo-clients logo-clients--logo-tapgerine"></div>
-        <div class="logo-clients logo-clients--logo-3d-look"></div>
-        <div class="logo-clients logo-clients--logo-orangear"></div>
-        <div class="logo-clients logo-clients--logo-adtelligent"></div>
-        <div class="logo-clients logo-clients--logo-clickky"></div>
-        <div class="logo-clients logo-clients--logo-eco-leasing"></div>
-        <div class="logo-clients logo-clients--logo-infra-tek"></div>
-        <div class="logo-clients logo-clients--logo-city-park"></div>
-        <div class="logo-clients logo-clients--logo-art-print"></div>
-        <div class="logo-clients logo-clients--logo-ultimate-card"></div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-hillel.png"
+            alt="logo-hillel"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-wanna-biz.png"
+            alt="logo-wanna-biz"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-tapgerine.svg"
+            alt="logo-tapgerine"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-3d-look.svg"
+            alt="logo-3d-look"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-orangear.svg"
+            alt="logo-orangear"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-adtelligent.svg"
+            alt="logo-adtelligent"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-clickky.svg"
+            alt="logo-clickky"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-eco-leasing.svg"
+            alt="logo-eco-leasing"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-infra-tek.svg"
+            alt="logo-infra-tek"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-city-park.svg"
+            alt="logo-city-park"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-art-print.svg"
+            alt="logo-art-print"
+          />
+        </div>
+        <div class="logo-clients">
+          <img
+            class="img-fluid"
+            src="../assets/img/logo-ultimate-card.svg"
+            alt="logo-ultimate-card"
+          />
+        </div>
       </div>
     </div>
     <div class="page page--articles-main">
       <div class="container">
-        <div class="breadcrumbs breadcrumbs-blue breadcrumbs--blue uppercase">
+        <div
+          class="
+            breadcrumbs
+            breadcrumbs-blue
+            breadcrumbs--padding-top
+            breadcrumbs--blue
+            uppercase
+          "
+        >
           публікації
           <span class="arrow-small arrow-small--blue"> </span>
         </div>
         <div class="liner-gradient">Нам є що розповісти</div>
         <div class="articles-wrap">
-          <!-- <div class="row flex"> -->
-          <div class="col">
+          <div class="article-col">
             <div class="article">
-              <!-- <div class="article--title"> -->
               <div class="article--title blue-medium">
                 Валютний контроль помер, хай живе валютний контроль!
-                <p class="date-article grey-tiny uppercase">14 червня</p>
-                <!-- </div> -->
+                <p class="date-article grey-tiny uppercase-top">14 червня</p>
               </div>
-              <div class="article--content">
+              <div class="article--content hide-on-mobile">
                 <p class="black-xs">
                   Експерти проводять конференції, круглі столи та іншого штибу
                   заходи на тему «лібералізація валютного законодавства».
@@ -368,9 +672,9 @@
               </div>
               <div class="article--title blue-medium">
                 Заповіт міленіала
-                <p class="date-article grey-tiny uppercase">19 серпня</p>
+                <p class="date-article grey-tiny uppercase-top">19 серпня</p>
               </div>
-              <div class="article--content">
+              <div class="article--content hide-on-mobile">
                 <p class="black-xs">
                   Що і як передаватимуть у спадщину сучасні влогери, опініон
                   лідери і криптомільйонери Типовий спадок українського
@@ -379,16 +683,16 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="article-col">
             <div class="article">
               <div class="article--image">
                 <img src="../assets/img/article1.png" alt="" />
               </div>
               <div class="article--title blue-medium">
                 Equity associate
-                <p class="date-article grey-tiny uppercase">22 квітня</p>
+                <p class="date-article grey-tiny uppercase-top">22 квітня</p>
               </div>
-              <div class="article--content">
+              <div class="article--content hide-on-mobile">
                 <p class="black-xs">
                   На проектах я джун. При цьому я співвласник юридичної фірми.
                   Як це відбулося. Перед вступом батьки мені казали, що якщо
@@ -402,7 +706,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="article-col">
             <div class="article">
               <div class="article--image">
                 <img src="../assets/img/article2.png" alt="" />
@@ -410,9 +714,9 @@
               <div class="article--title blue-medium">
                 Штраф для «Корпорації добра»: що буде з Google та іншими за
                 порушення GDPR
-                <p class="date-article grey-tiny uppercase">29 вересня</p>
+                <p class="date-article grey-tiny uppercase-top">29 вересня</p>
               </div>
-              <div class="article--content">
+              <div class="article--content hide-on-mobile">
                 <p class="black-xs">
                   І чому стягнення у 50 млн євро може стати доленосним
                   прецедентом За матеріалами Mind.ua 21 січня Національна
@@ -444,7 +748,9 @@
               </li>
               <li>
                 <span class="circle circle--grey circle-footer"></span>
-                <a class="uppercase blue-tiny" href="#">Подивитися на мапі</a>
+                <a class="uppercase-top blue-tiny" href="#"
+                  >Подивитися на мапі</a
+                >
               </li>
             </ul>
           </nav>

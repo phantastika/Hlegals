@@ -1,4 +1,4 @@
-@media screen and ( max-width: 890px  )
+@media screen and ( max-width: 990px  )
     .grid-wrapper
         display: flex
         flex-direction: column
@@ -7,8 +7,22 @@
     .services-row
         .item-service
             width: 40%
+    .articles-wrap
+        .article-col
+            width: 48%
+    .logo-clients
+        &-wrap
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+    .services
+        &--mobile
+            display: block
+        &--desktop
+            display: none
 
 @media screen and ( max-width: 376px)
+    .header-wrap
+        padding-top: 30px
     .hide-on-mobile
         display: none
     .container
@@ -43,6 +57,7 @@
 
     .services-row
         flex-direction: column
+        margin: 0
         .item-service
             width: 95%
             display: flex
@@ -52,3 +67,30 @@
         .title-service
             width: 70%
             font-size: 18px
+    .benefits
+        padding: 10% 12px
+    .team-slider-wrapper
+        .team-slider
+            flex-direction: column-reverse
+            .section_team
+                padding: 20px
+                width: 100%
+                .liner-gradient
+                    font-size: 32px
+                    line-height: 38px
+            .team-slider--photo-wrapper
+                margin: 0 20px 20px 20px
+                width: 60px
+                height: 60px
+                border-radius: 50%
+                overflow: hidden
+    .articles-wrap
+        .article-col
+            width: 100%
+    .logo-clients
+        &-wrap
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+    footer
+        .flex
+            flex-direction: column

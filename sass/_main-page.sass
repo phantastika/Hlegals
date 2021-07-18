@@ -9,7 +9,7 @@
         background-image: url('../assets/img/background_main.svg')
     &--bgc-splash
         background-image: url('../assets/img/Splash.svg')
-        height: 75%
+        height: calc( 100vh - 200px )
         width: 100%
         max-width: 700px
         margin: 5% auto 0
@@ -128,12 +128,10 @@
 .background_logo
     background-image: url('../assets/img/symbol-Long-leg.svg')
     background-repeat: no-repeat
-    height: 58vh
-    width: 58vh
-    max-height: 500px
+    height: 100%
     max-width: 500px
     background-size: cover
-    margin: 0 auto
+    margin: 20% auto 1%
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -163,26 +161,34 @@
     margin-bottom: 20px
 .item-benefit
     padding-right: 40px
-    border-right: 4px solid $bgc-grey
+    border-right: 4px solid
     cursor: pointer
     text-align: right
+    word-wrap: break-word
     &:hover
-        background-image: linear-gradient(270deg, #F0145A 30%, #EF8080 70%)
+        color: $txt-crimson
+        background: linear-gradient(270deg, #F0145A 30%, #EF8080 70%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
         font-size: 42px
+.benefits
+    padding: 6% 12px
+    &--title
+        color: $txt-white
+        font-size: 22px
+        line-height: 26px
+        margin-bottom: 15px
 
-.flex-breadcrumbs
-    // padding-top: 80px
 .container-main-team
     margin-top: 60px
 .breadcrumbs
     text-transform: uppercase
     color: $txt-white
     font-size: 14px
+    &--padding-top
+        padding-top: 40px
     &.breadcrumbs-blue
         color: $txt-blue
-        padding-top: 40px
     .arrow-small
         width: 5px
         height: 5px
@@ -199,6 +205,9 @@
 .title-position
     &--gradient
         margin-bottom: 80px
+.services
+    &--mobile
+        display: none
 .services-bgr
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
     border-radius: 0px 0px 12px 12px
@@ -230,16 +239,27 @@
         background-image: url('../assets/img/icon-pad.svg')
     &--icon-court
         background-image: url('../assets/img/Icon-court.svg')
+.team-slider-wrapper
+    padding-bottom: 60px
+    margin-top: 50px
+.team-slider
+    &--photo-wrapper
+        width: 31%
+        max-width: 413px
+        height: auto
+    &--photo
+        width: 100%
 
+.section_team
+    width: 69%
+    padding: 40px
+    .liner-gradient
+        line-height: 50px
 .photo_team
     background-repeat: no-repeat
     height: 500px
     min-width: 413px
     background-image: url('../assets/img/photo__page-team.svg')
-
-.section_team
-    max-width: 827px
-    margin-top: 40px
 
 .wrap-position-alex
     margin-top: 20px
@@ -251,39 +271,9 @@
     margin: 30px auto
     text-align: center
 .logo-clients
-    background-repeat: no-repeat
-    width: 25%
-    background-position: center
-
-    &--logo-hillel
-        background-image: url('../assets/img/logo-hillel.png')
-    &--logo-wanna-biz
-        background-image: url('../assets/img/logo-wanna-biz.png')
-    &--logo-tapgerine
-        background-image: url('../assets/img/logo-tapgerine.svg')
-    &--logo-3d-look
-        background-image: url('../assets/img/logo-3d-look.svg')
-    &--logo-orangear
-        background-image: url('../assets/img/logo-orangear.svg')
-    &--logo-adtelligent
-        background-image: url('../assets/img/logo-adtelligent.svg')
-    &--logo-clickky
-        background-image: url('../assets/img/logo-clickky.svg')
-    &--logo-eco-leasing
-        background-image: url('../assets/img/logo-eco-leasing.svg')
-    &--logo-infra-tek
-        background-image: url('../assets/img/logo-infra-tek.svg')
-    &--logo-city-park
-        background-image: url('../assets/img/logo-city-park.svg')
-    &--logo-art-print
-        background-image: url('../assets/img/logo-art-print.svg')
-    &--logo-ultimate-card
-        background-image: url('../assets/img/logo-ultimate-card.svg')
     &-wrap
-        display: flex
-        flex-wrap: wrap
-        max-height: 360px
-        height: 50vh
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
         max-width: 1440px
         margin: 0 auto
 
@@ -312,9 +302,9 @@
         align-items: center
         justify-content: center
         background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%)
-    .col
+    .article-col
         width: 32%
-        min-width: 350px
+        min-width: 250px
         .article
             width: 100%
             background-color: $bgc-white
@@ -435,6 +425,16 @@
     &--about
         text-align: center
         margin: 14px
+
+#carouselExampleIndicators,
+#carouselServicesIndicators
+    .carousel-indicators
+        button
+            width: 16px
+            height: 16px
+            border-radius: 50%
+            background-color: $bgc-blue
+            margin-left: 14px
 
 .title-team-wrap
     display: flex
